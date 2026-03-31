@@ -32,7 +32,7 @@
 ### 步骤 2：创建应用
 创建一个标准协议的 OAuth2.0 应用
 
-![](images/1.png)
+![](./images/1.png)
 
 ### 步骤 3：修改配置
 
@@ -61,9 +61,9 @@ spring:
 
 参考下面2张图的标示，完成上面配置文件的修改。
 
-![](images/2.png)
+![](./images/2.png)
 
-![](images/3.png)
+![](./images/3.png)
 
 下面是修改后的配置，仅供参考
 ```yaml
@@ -97,22 +97,22 @@ spring:
 - Redirect URI 白名单：是 IDaaS 认证完成后跳转回本地应用的地址，格式：{baseUrl}/login/oauth2/code/{registrationId}，本地调试请填写：http://localhost:8080/login/oauth2/code/yidengtech-idaas
 
 
-![](images/4.png)
+![](./images/4.png)
 
 ### 步骤 5：应用授权
 
 配置那些用户有权限登录此应用
 
-![img.png](images/5.png)
+![](./images/5.png)
 
 ### 步骤 6：用户登录
 
 - 访问 `http://localhost:8080`，完成登录。
 
-![img.png](images/6.png)
+![](./images/6.png)
 
 ### 步骤 7：登录成功
 
 - 用户登录成功后会跳转到原地址：`http://localhost:8080`
 
-  ![img.png](images/7.png)
+  ![](./images/7.png)

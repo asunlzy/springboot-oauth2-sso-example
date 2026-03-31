@@ -70,7 +70,7 @@ spring:
 <table>
    <tr>
       <td style="border: 1px solid black; padding: 0;">
-         <img src="./images/2.png" alt="创建应用" style="display: block;">
+         <img src="./images/2.png" alt="亿登IDaaS oauth2.0 通用配置" style="display: block;">
        </td>
    </tr>
 </table>
@@ -78,7 +78,7 @@ spring:
 <table>
    <tr>
       <td style="border: 1px solid black; padding: 0;">
-         <img src="./images/3.png" alt="创建应用" style="display: block;">
+         <img src="./images/3.png" alt="亿登IDaaS oauth2.0 协议端点" style="display: block;">
        </td>
    </tr>
 </table>
@@ -115,22 +115,46 @@ spring:
 - Redirect URI 白名单：是 IDaaS 认证完成后跳转回本地应用的地址，格式：{baseUrl}/login/oauth2/code/{registrationId}，本地调试请填写：http://localhost:8080/login/oauth2/code/yidengtech-idaas
 
 
-![](./images/4.png)
+<table>
+   <tr>
+      <td style="border: 1px solid black; padding: 0;">
+         <img src="./images/4.png" alt="亿登IDaaS oauth2.0 属性映射" style="display: block;">
+       </td>
+   </tr>
+</table>
 
 ### 步骤 5：应用授权
 
 配置那些用户有权限登录此应用
 
-![](./images/5.png)
+<table>
+   <tr>
+      <td style="border: 1px solid black; padding: 0;">
+         <img src="./images/5.png" alt="亿登IDaaS oauth2.0 应用授权" style="display: block;">
+       </td>
+   </tr>
+</table>
 
 ### 步骤 6：用户登录
 
 - 访问 `http://localhost:8080`，完成登录。
 
-![](./images/6.png)
+<table>
+   <tr>
+      <td style="border: 1px solid black; padding: 0;">
+         <img src="./images/6.png" alt="亿登IDaaS oauth2.0 登录界面" style="display: block;">
+       </td>
+   </tr>
+</table>
 
 ### 步骤 7：登录成功
 
 - 用户登录成功后会跳转到原地址：`http://localhost:8080`
 
-  ![](./images/7.png)
+<table>
+   <tr>
+      <td style="border: 1px solid black; padding: 0;">
+         <img src="./images/7.png" alt="亿登IDaaS oauth2.0 登录成功" style="display: block;">
+       </td>
+   </tr>
+</table>

@@ -32,7 +32,14 @@
 ### 步骤 2：创建应用
 创建一个标准协议的 OAuth2.0 应用
 
-![](./images/1.png)
+<div align="center">
+  <img src="./images/1.png" 
+       alt="创建应用" 
+       style="border: 1px solid black; 
+              border-radius: 6px; 
+              padding: 4px;
+              max-width: 100%;">
+</div>
 
 ### 步骤 3：修改配置
 

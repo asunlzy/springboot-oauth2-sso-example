@@ -1,0 +1,20 @@
+server:
+    port: 8080
+spring:
+    security:
+        oauth2:
+            client:
+                registration:
+                    yidengtech-idaas:
+                        client-id: app_a474e196f97e470c865b927e55318086  #应用id
+                        client-secret: e37d7155533f4270857faca7cd3aae46  #应用秘钥
+                        scope: user.read
+                        redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+                        client-authentication-method: post
+                        authorization-grant-type: authorization_code
+                provider:
+                    yidengtech-idaas:
+                        authorization-uri: https://idaas-api.yidengtech.com/third/oauth2/v1/app_a474e196f97e470c865b927e55318086/authorize
+                        token-uri: https://idaas-api.yidengtech.com/third/oauth2/v1/app_a474e196f97e470c865b927e55318086/token
+                        user-info-uri: https://idaas-api.yidengtech.com/third/oauth2/v1/app_a474e196f97e470c865b927e55318086/user/info
+                        user-name-attribute: username

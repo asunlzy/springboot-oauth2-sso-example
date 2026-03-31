@@ -1,0 +1,24 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>OAuth2.0 example</title>
+</head>
+<body>
+<h2>OAuth2.0 Login Example</h2>
+<div sec:authorize="isAuthenticated()">
+    <h3>用户信息</h3>
+    <p>
+        <strong>账号: </strong>
+        <span sec:authentication="name"></span>
+    </p>
+    <p th:if="${#authentication?.principal?.attributes['displayName']}">
+        <strong>姓名:</strong>
+        <span sec:authentication="principal.attributes['displayName']"></span>
+    </p>
+    <p th:if="${#authentication?.principal?.attributes['mail']}">
+        <strong>邮箱:</strong>
+        <span sec:authentication="principal.attributes['mail']"></span>
+    </p>
+</div>
+</body>
+</html>

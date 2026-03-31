@@ -67,9 +67,21 @@ spring:
 
 参考下面2张图的标示，完成上面配置文件的修改。
 
-![](./images/2.png)
+<table>
+   <tr>
+      <td style="border: 1px solid black; padding: 0;">
+         <img src="./images/2.png" alt="创建应用" style="display: block;">
+       </td>
+   </tr>
+</table>
 
-![](./images/3.png)
+<table>
+   <tr>
+      <td style="border: 1px solid black; padding: 0;">
+         <img src="./images/3.png" alt="创建应用" style="display: block;">
+       </td>
+   </tr>
+</table>
 
 下面是修改后的配置，仅供参考
 ```yaml
